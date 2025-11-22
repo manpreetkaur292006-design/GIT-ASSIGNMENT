@@ -14,3 +14,7 @@ print(" * : Multiplication")
 print(" / : Division")
 print(" // : Floor Division")
 print(" ** : Exponention")
+
+num1=float(input("Enter first number:"))
+num2=float(input("Enter second number:"))
+operator=input("Enter the operator:")
