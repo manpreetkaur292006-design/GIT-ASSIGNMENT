@@ -15,30 +15,35 @@ print(" / : Division")
 print(" // : Floor Division")
 print(" ** : Exponention")
 
-num1=float(input("Enter first number:"))
-num2=float(input("Enter second number:"))
+num1=float(input("Enter first number:"))   # taking input for first number from user
+num2=float(input("Enter second number:"))  # taking input for secong number from user
 operator=input("Enter the operator:")
 
-if operator=="+":
-    add=num1+num2
-    print("Addition of",num1,"and",num2,":",add)
+# conditional statements or comparison part
+
+if operator=="+":  
+    add=num1+num2  # performing the addition 
+    print("Addition of",num1,"and",num2,":",add)   # printing the result
 
 elif operator=="-":
-    sub=num1-num2
-    print("Subtration of",num1,"and",num2,":",sub)
+    sub=num1-num2   # performing the subtraction
+    print("Subtration of",num1,"and",num2,":",sub)   # printing the result
 
 elif operator=="*":
-    mul=num1*num2
-    print("Multiplication of",num1,"and",num2,":",mul)
+    mul=num1*num2    # performing the multiplication
+    print("Multiplication of",num1,"and",num2,":",mul)   # printing the result
 
 elif operator=="/":
-    divi=num1/num2
-    print("Division of",num1,"and",num2,":",divi)
+    divi=num1/num2    # performing the division
+    print("Division of",num1,"and",num2,":",divi)   # printing the result
 
-elif operator=="**":
-    exp=num1**num2
-    print(num1,"to the power",num2,":",exp)
+elif operator=="**":  
+    exp=num1**num2   # performing the exponention
+    print(num1,"to the power",num2,":",exp)   # printing the result
 
 elif operator=="//":
-    floor_div=num1//num2
-    print("Floor division of",num1,"and",num2,":",floor_div)
+    floor_div=num1//num2    # performing the floor division
+    print("Floor division of",num1,"and",num2,":",floor_div)   # printing the result
+
+else: 
+    print("you entered the wrong operator !!")   # if operator doesnot match then printing the error message
